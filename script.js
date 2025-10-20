@@ -52,7 +52,7 @@ function ParticlePool(length){var ps=new Array(length);for(var i=0;i<length;i++)
       p.y=settings.particles.size/2-p.y*settings.particles.size/350; return p;}
     g.beginPath(); var t=-Math.PI,p=to(t); g.moveTo(p.x,p.y);
     while(t<Math.PI){t+=0.01;p=to(t);g.lineTo(p.x,p.y);} g.closePath();
-    g.fillStyle='#ff3366'; g.fill();
+    g.fillStyle='#db0acaff'; g.fill();
     var img=new Image(); img.src=c.toDataURL(); return img;
   })();
 
