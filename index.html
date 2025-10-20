@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quà 20/10 — Trái tim & Dải chữ ngân hà</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="pinkboard"></canvas>
+<div id="galaxy-text"></div>
+<div id="qr"></div>
+
+<button class="btn-edit" onclick="showPanel()">✏️ Chỉnh sửa lời chúc</button>
+
+<div id="text-input-panel" class="hidden">
+  <h3>🌟 Tùy chỉnh lời chúc 🌟</h3>
+  
+  <div class="ring-config">
+    <h4>Vòng 1 (gần nhất)</h4>
+    <div class="input-group">
+      <input type="text" id="ring1-1" placeholder="Text 1" value="🌸">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring1-2" placeholder="Text 2" value="Chúc chị em ">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring1-3" placeholder="Text 3" value="20/10">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring1-4" placeholder="Text 4" value="🌸">
+    </div>
+  </div>
+
+  <div class="ring-config">
+    <h4>Vòng 2 (giữa)</h4>
+    <div class="input-group">
+      <input type="text" id="ring2-1" placeholder="Text 1" value="💕">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring2-2" placeholder="Text 2" value="vui vẻ">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring2-3" placeholder="Text 3" value="mạnh khỏe">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring2-4" placeholder="Text 4" value="💕">
+    </div>
+  </div>
+
+  <div class="ring-config">
+    <h4>Vòng 3 (xa nhất)</h4>
+    <div class="input-group">
+      <input type="text" id="ring3-1" placeholder="Text 1" value="✨">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring3-2" placeholder="Text 2" value="luôn ngập tràn">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring3-3" placeholder="Text 3" value="hạnh phúc">
+    </div>
+    <div class="input-group">
+      <input type="text" id="ring3-4" placeholder="Text 4" value="✨">
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button class="btn btn-apply" onclick="applyText()">✨ Áp dụng</button>
+    <button class="btn btn-close" onclick="hidePanel()">Đóng</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
